@@ -1,3 +1,7 @@
 <script type="text/javascript">
-  window.location="explore/directory/";
+  if(window.location.hash) {
+    window.location="explore/#" + window.location.hash;
+  } else {
+    window.location="explore/";
+  }
 </script>
